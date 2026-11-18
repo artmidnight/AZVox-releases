@@ -24,11 +24,11 @@ AZVox updates itself: when a new version is out, the app shows **Update** or **R
 
 ## Features
 
-- **Noise removal**: fans, keyboards, traffic, dogs, cafés. Presets (Gentle, Balanced, Strong) plus a noise reduction slider.
+- **Noise removal**: fans, keyboards, traffic, dogs, roosters, cafés. Presets (Gentle, Balanced, Strong) plus a noise reduction slider up to **300%**: above 100% a second cleaning pass, above 200% the mic is also muted between your words.
 - **Two engines**: *Lite* (almost no CPU) and *Quality* (DeepFilterNet, cleaner; one-time model download inside the app).
 - **Reduce background voices**: lowers people talking farther away than you.
 - **Your voice only**: learns your voice and mutes other voices (one-time model download).
-- **Test my mic**: record yourself and compare *Original* vs *With AZVox*, no setup needed.
+- **Test my mic**: record yourself and compare *Original* vs *With AZVox* on the speaker or headset you choose, no setup needed.
 - **Echo cancellation** and noise removal for the other callers' audio.
 - Tray icon, **Ctrl+Alt+N** hotkey to flip noise removal, start with Windows.
 
@@ -54,7 +54,7 @@ Run the downloaded `AZVox_..._x64-setup.exe` and follow the installer. AZVox ope
 
 Most PCs don't have a virtual microphone yet. AZVox can set up the free **VB-Audio Virtual Cable** for you:
 
-1. In AZVox, open **Devices** and click **Get free virtual cable**.
+1. In AZVox, open **Calls & cable** in the sidebar and click **Get free virtual cable**.
 2. Click **Yes** on the Windows permission prompt. VB-Audio's setup window opens: click **Install Driver**, then **OK**.
 3. If AZVox asks, **restart your PC**, open AZVox again and click **Rename to AZVox Clean Mic**.
 4. You now have two new audio devices:
@@ -65,7 +65,7 @@ VB-Audio Virtual Cable is donationware by VB-Audio Software ([vb-audio.com](http
 
 ### Step 3 · Turn AZVox on
 
-1. Under **Devices**, set **Microphone** to the mic or headset you talk into.
+1. On **Home**, under **Devices**, set **Microphone you talk into** to your mic or headset.
 2. Check **Send cleaned voice to** shows **AZVox Clean Output**.
 3. Click the big **power button**. "Your mic" moves when you talk; "Callers hear" shows the cleaned sound.
 
@@ -83,8 +83,9 @@ Leave your speakers/headphones setting as it is; AZVox only changes your microph
 
 ### Tips
 
-- **Gentle** keeps your voice most natural, **Balanced** removes most noise, **Strong** also cleans what's left (best with the Quality engine).
-- Voice sounds thin or robotic? Lower the **Noise reduction** slider or choose **Gentle**.
+- **Gentle** keeps your voice most natural, **Balanced** (100%) removes most noise, **Strong** (200%) adds a second cleaning pass. Drag the slider to **300%** to also mute dogs, roosters, horns and phones between your words. The **Quality** engine gives the cleanest result.
+- Voice sounds thin, robotic, or words get cut? Lower the **Noise reduction** slider or choose **Gentle**.
+- Other people's voices from a phone or TV: use **Your voice only** (Noise & voices → Learn my voice).
 - **Ctrl+Alt+N** flips noise removal from any app, so you can compare during a call.
 - Closing the window keeps AZVox running in the tray (bottom-right of the taskbar). Right-click the tray icon → **Quit AZVox** to exit.
 
