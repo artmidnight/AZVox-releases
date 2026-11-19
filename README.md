@@ -10,7 +10,7 @@ It works with **any** calling app: Zoom, Discord, Microsoft Teams, Google Meet, 
 
 Developed by **Art Midnight**.
 
-![AZVox Home screen](screenshots/home-dark.png)
+![AZVox Home screen, live](screenshots/home-light.gif)
 
 ---
 
@@ -38,7 +38,7 @@ You need **Windows 10 or 11**, a microphone or headset, and an internet connecti
 
 Go to **Test my mic** in the menu on the left.
 
-![Test my mic](screenshots/test-my-mic.png)
+![Test my mic](screenshots/test-my-mic-light.png)
 
 1. Click **Record 6-second test** and talk normally, with your usual noise around you (fan on, TV on, whatever is normal for you).
 2. Click **Original** to hear yourself without AZVox.
@@ -49,7 +49,7 @@ Go to **Test my mic** in the menu on the left.
 
 Your call app needs a way to receive AZVox's cleaned-up voice. AZVox does this with a free **virtual microphone**: an extra "microphone" in Windows that carries your clean voice instead of the noisy one.
 
-![Calls & cable](screenshots/calls-and-cable.png)
+![Calls & cable](screenshots/calls-and-cable-light.png)
 
 1. In AZVox, click **Calls & cable** in the menu.
 2. Click **Get free virtual cable**. AZVox downloads the free VB-Audio Virtual Cable from VB-Audio's website.
@@ -62,6 +62,8 @@ Your call app needs a way to receive AZVox's cleaned-up voice. AZVox does this w
 ### 4. Turn AZVox on
 
 Go to **Home** and click the big round **power button**. When it glows and says **Live**, AZVox is cleaning your voice.
+
+![The power button glows while AZVox works](screenshots/power-light.gif)
 
 - **Your mic** shows what your microphone hears.
 - **Callers hear** shows what the other person will hear. When you stop talking, it should drop to almost nothing: that's the noise being removed.
@@ -84,7 +86,7 @@ That's it. Talk as usual.
 
 ## Choosing how strong the noise removal is
 
-![Noise & voices](screenshots/noise.png)
+![Noise & voices](screenshots/noise-light.png)
 
 Pick a **preset**, or drag the **Noise reduction** slider:
 
@@ -112,7 +114,7 @@ Pick a **preset**, or drag the **Noise reduction** slider:
 
 AZVox checks for new versions by itself, when it starts and every few hours. When there's one, you'll see this:
 
-![Update available](screenshots/update.png)
+![Update available](screenshots/update-light.png)
 
 Click **Update**. AZVox downloads the new version, installs it and restarts by itself. **Remind me later** asks again tomorrow. You can also go to **Settings → Check for updates** at any time.
 
@@ -120,11 +122,13 @@ Click **Update**. AZVox downloads the new version, installs it and restarts by i
 
 ## Light or dark
 
-![Light mode](screenshots/home-light.png)
+AZVox starts in **light mode**. Prefer dark? **Settings → Appearance → Theme**: **Light**, **Dark**, or **System** (follows Windows).
 
-**Settings → Appearance → Theme**: **System** (follows Windows), **Light** or **Dark**. The glowing animations can be turned off under **Animations**.
+![Dark mode](screenshots/home-dark.png)
 
-![Settings](screenshots/settings.png)
+The glowing animations play on every PC, even if Windows animations are turned off. You can turn them off under **Settings → Animations**.
+
+![Settings](screenshots/settings-light.png)
 
 ---
 
@@ -135,7 +139,7 @@ Click **Update**. AZVox downloads the new version, installs it and restarts by i
 - **Using speakers instead of a headset?** The other person may hear an echo. See **Calls & cable → Call audio & echo** in the app. With a headset you don't need this.
 - **Help & support** in the app has a full step-by-step guide.
 
-![Help & support](screenshots/help.png)
+![Help & support](screenshots/help-light.png)
 
 ---
 
