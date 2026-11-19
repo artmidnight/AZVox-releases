@@ -1,112 +1,164 @@
 # AZVox
 
-**Crystal-clear calls, fully offline.** AZVox removes background noise and other people's voices from your microphone in real time, for any calling app: Zoom, Discord, Microsoft Teams, Google Meet, Skype, OBS and more.
+**Crystal-clear calls, fully offline.** AZVox removes background noise from your microphone while you talk: fans, traffic, dogs barking, roosters, keyboards, people talking nearby, a TV or phone in the room. The people you call hear only **you**.
 
-Everything runs on your own PC. **No audio ever leaves your device**, no account, no subscription, free.
+It works with **any** calling app: Zoom, Discord, Microsoft Teams, Google Meet, Skype, Messenger, WhatsApp Desktop, OBS and more.
+
+- **Free.** No account, no subscription, no ads.
+- **Private.** Everything happens on your own PC. **Your voice never leaves your computer**: nothing is uploaded, nothing is recorded behind your back.
+- **Works on any Windows PC.** No graphics card needed.
 
 Developed by **Art Midnight**.
+
+![AZVox Home screen](screenshots/home-dark.png)
 
 ---
 
 ## Download
 
-👉 **[Download the latest AZVox for Windows](https://github.com/artmidnight/AZVox-releases/releases/latest)**: open the newest release and download `AZVox_x.y.z_x64-setup.exe` under **Assets**.
+👉 **[Download AZVox for Windows](https://github.com/artmidnight/AZVox-releases/releases/latest)**
 
-- Windows 10 or 11, 64-bit
-- Works on any PC: no graphics card needed
-- Installs for your user only (no administrator rights needed for the app itself)
+On that page, scroll to **Assets** and click **`AZVox_x.y.z_x64-setup.exe`** (the numbers are the version).
 
-> **Windows SmartScreen** may say "Windows protected your PC" because AZVox is new and not yet code-signed. Click **More info → Run anyway**.
-
-AZVox updates itself: when a new version is out, the app shows **Update** or **Remind me later**. Click **Update** and AZVox downloads, installs and restarts on its own.
+You need **Windows 10 or 11**, a microphone or headset, and an internet connection only for downloading.
 
 ---
 
-## Features
+## Quick start (5 minutes)
 
-- **Noise removal**: fans, keyboards, traffic, dogs, roosters, cafés. Presets (Gentle, Balanced, Strong) plus a noise reduction slider up to **300%**: above 100% a second cleaning pass, above 200% the mic is also muted between your words.
-- **Two engines**: *Lite* (almost no CPU) and *Quality* (DeepFilterNet, cleaner; one-time model download inside the app).
-- **Reduce background voices**: lowers people talking farther away than you.
-- **Your voice only**: learns your voice and mutes other voices (one-time model download).
-- **Test my mic**: record yourself and compare *Original* vs *With AZVox* on the speaker or headset you choose, no setup needed.
-- **Echo cancellation** and noise removal for the other callers' audio.
-- Tray icon, **Ctrl+Alt+N** hotkey to flip noise removal, start with Windows.
+### 1. Install AZVox
 
----
+1. Open the file you downloaded (`AZVox_..._setup.exe`).
+2. If a blue box says **"Windows protected your PC"**, click **More info**, then **Run anyway**. (Windows shows this for new apps that aren't widely known yet. AZVox is safe.)
+3. Read the license, click **I Agree**, then **Install**.
+4. If Windows asks *"Do you want to allow this app to make changes?"* during setup, you can click **No**. AZVox works fine without it.
+5. AZVox opens by itself when it's done.
 
-## How to use
+### 2. Hear it for yourself first
 
-### How it works
+Go to **Test my mic** in the menu on the left.
 
-AZVox sits between your real microphone and your call app. It cleans your voice and sends it to a **virtual microphone**, which you then select in your call app.
+![Test my mic](screenshots/test-my-mic.png)
 
-```
-Your mic  →  AZVox  →  AZVox Clean Mic  →  Zoom / Discord / Teams / Meet
-```
+1. Click **Record 6-second test** and talk normally, with your usual noise around you (fan on, TV on, whatever is normal for you).
+2. Click **Original** to hear yourself without AZVox.
+3. Click **With AZVox** to hear the difference.
+4. Use **Play the recording on** to choose your headset or speakers.
 
-### Step 1 · Install AZVox
+### 3. Set up the virtual microphone (one time)
 
-Run the downloaded `AZVox_..._x64-setup.exe` and follow the installer. AZVox opens when it's done.
+Your call app needs a way to receive AZVox's cleaned-up voice. AZVox does this with a free **virtual microphone**: an extra "microphone" in Windows that carries your clean voice instead of the noisy one.
 
-**Just want to hear it first?** Click **Test my mic**, talk for 6 seconds with your usual background noise, then play **Original** and **With AZVox**. This works without any other setup.
+![Calls & cable](screenshots/calls-and-cable.png)
 
-### Step 2 · Get the virtual microphone (one time)
+1. In AZVox, click **Calls & cable** in the menu.
+2. Click **Get free virtual cable**. AZVox downloads the free VB-Audio Virtual Cable from VB-Audio's website.
+3. Click **Yes** when Windows asks for permission.
+4. A VB-Audio window opens: click **Install Driver**, then **OK**.
+5. AZVox renames it so you can find it easily: **AZVox Clean Mic**.
 
-Most PCs don't have a virtual microphone yet. AZVox can set up the free **VB-Audio Virtual Cable** for you:
+> If AZVox asks you to restart your PC, do it, then open AZVox and click **Rename to AZVox Clean Mic**.
 
-1. In AZVox, open **Calls & cable** in the sidebar and click **Get free virtual cable**.
-2. Click **Yes** on the Windows permission prompt. VB-Audio's setup window opens: click **Install Driver**, then **OK**.
-3. If AZVox asks, **restart your PC**, open AZVox again and click **Rename to AZVox Clean Mic**.
-4. You now have two new audio devices:
-   - **AZVox Clean Output**: AZVox sends your clean voice here (selected automatically).
-   - **AZVox Clean Mic**: the microphone you choose in your call app.
+### 4. Turn AZVox on
 
-VB-Audio Virtual Cable is donationware by VB-Audio Software ([vb-audio.com](https://vb-audio.com/Cable/)) and is not part of AZVox. Already have a virtual cable (VB-Cable, Virtual Audio Cable, VoiceMeeter)? Just pick it under **Send cleaned voice to**.
+Go to **Home** and click the big round **power button**. When it glows and says **Live**, AZVox is cleaning your voice.
 
-### Step 3 · Turn AZVox on
+- **Your mic** shows what your microphone hears.
+- **Callers hear** shows what the other person will hear. When you stop talking, it should drop to almost nothing: that's the noise being removed.
 
-1. On **Home**, under **Devices**, set **Microphone you talk into** to your mic or headset.
-2. Check **Send cleaned voice to** shows **AZVox Clean Output**.
-3. Click the big **power button**. "Your mic" moves when you talk; "Callers hear" shows the cleaned sound.
+### 5. Pick AZVox in your call app
 
-### Step 4 · Pick the microphone in your call app
+In your call app's audio settings, choose **AZVox Clean Mic** as the **microphone**. Leave the speaker/headphones setting as it is.
 
-| App | Where |
+| App | Where to find it |
 |---|---|
-| **Zoom** | Settings → Audio → Microphone → **AZVox Clean Mic**. Set "Background noise suppression" to **Low**. |
-| **Discord** | User Settings → Voice & Video → Input Device → **AZVox Clean Mic**. Turn off Discord's noise suppression. |
+| **Zoom** | Settings → Audio → Microphone → **AZVox Clean Mic**. Also set "Suppress background noise" to **Low**. |
+| **Discord** | User Settings → Voice & Video → Input Device → **AZVox Clean Mic**. Turn off Discord's own noise suppression. |
 | **Microsoft Teams** | Settings → Devices → Microphone → **AZVox Clean Mic** |
-| **Google Meet** | ⋮ → Settings → Audio → Microphone → **AZVox Clean Mic** |
-| **Anything else** | Choose **AZVox Clean Mic** wherever it asks for a microphone |
+| **Google Meet** | ⋮ (three dots) → Settings → Audio → Microphone → **AZVox Clean Mic** |
+| **Messenger / WhatsApp / other** | Look for "Microphone" or "Input" in the settings, pick **AZVox Clean Mic** |
 
-Leave your speakers/headphones setting as it is; AZVox only changes your microphone.
+That's it. Talk as usual.
 
-### Tips
+---
 
-- **Gentle** keeps your voice most natural, **Balanced** (100%) removes most noise, **Strong** (200%) adds a second cleaning pass. Drag the slider to **300%** to also mute dogs, roosters, horns and phones between your words. The **Quality** engine gives the cleanest result.
-- Voice sounds thin, robotic, or words get cut? Lower the **Noise reduction** slider or choose **Gentle**.
-- Other people's voices from a phone or TV: use **Your voice only** (Noise & voices → Learn my voice).
-- **Ctrl+Alt+N** flips noise removal from any app, so you can compare during a call.
-- Closing the window keeps AZVox running in the tray (bottom-right of the taskbar). Right-click the tray icon → **Quit AZVox** to exit.
+## Choosing how strong the noise removal is
 
-### Troubleshooting
+![Noise & voices](screenshots/noise.png)
 
-- **Callers can't hear me**: AZVox must be on (power button lit), and your call app must use **AZVox Clean Mic**, not your real microphone.
-- **"Your mic" doesn't move**: pick the right microphone under Devices, and check Windows Settings → Privacy & security → Microphone → *Let desktop apps access your microphone*.
-- **No microphone found**: plug in a mic or headset; AZVox detects it automatically.
-- **Robotic voice**: choose Gentle or lower the slider.
+Pick a **preset**, or drag the **Noise reduction** slider:
+
+| Preset | Best for |
+|---|---|
+| **Gentle** | Quiet rooms. Your voice stays most natural. |
+| **Balanced** (default) | Normal homes and offices. Removes most noise. |
+| **Strong** | Fans, aircon, traffic outside. |
+| **Extreme** | Dogs, roosters, horns, phones, people walking by: also silences your mic between your words. |
+| **Max** | Very noisy places. The strongest setting, and it also turns on *Reduce background voices*. |
+
+**Engine:**
+- **Lite** uses almost no computer power. Good for older or slower PCs.
+- **Quality** is cleaner. It downloads once (about 36 MB) and then works offline. If your PC is too slow for it, AZVox tells you and suggests Lite.
+
+**Other voices:**
+- **Reduce background voices** lowers people talking farther away than you.
+- **Your voice only**: click **Learn my voice**, talk for about 10 seconds, then switch it on. AZVox then mutes voices that aren't yours, like a TV, a phone on speaker, or family members.
+
+**Tip:** if your voice sounds thin or robotic, or the ends of words get cut, choose a weaker preset or lower the slider a little. **Ctrl+Alt+N** turns noise removal on or off from any app, so you can compare during a call.
+
+---
+
+## Updates
+
+AZVox checks for new versions by itself, when it starts and every few hours. When there's one, you'll see this:
+
+![Update available](screenshots/update.png)
+
+Click **Update**. AZVox downloads the new version, installs it and restarts by itself. **Remind me later** asks again tomorrow. You can also go to **Settings → Check for updates** at any time.
+
+---
+
+## Light or dark
+
+![Light mode](screenshots/home-light.png)
+
+**Settings → Appearance → Theme**: **System** (follows Windows), **Light** or **Dark**. The glowing animations can be turned off under **Animations**.
+
+![Settings](screenshots/settings.png)
+
+---
+
+## Good to know
+
+- **Closing the window doesn't turn AZVox off.** It keeps running in the system tray (the small icons next to the clock, bottom right). To quit completely: right-click the AZVox icon → **Quit AZVox**.
+- **Start with Windows** (Settings) starts AZVox automatically when you turn on your PC.
+- **Using speakers instead of a headset?** The other person may hear an echo. See **Calls & cable → Call audio & echo** in the app. With a headset you don't need this.
+- **Help & support** in the app has a full step-by-step guide.
+
+![Help & support](screenshots/help.png)
+
+---
+
+## Something not working?
+
+- **The other person can't hear me:** make sure AZVox shows **Live** (power button on), and that your call app's microphone is **AZVox Clean Mic**, not your real microphone.
+- **"Your mic" doesn't move when I talk:** on **Home → Devices**, choose the microphone you actually talk into. Also check Windows Settings → Privacy & security → Microphone → *Let desktop apps access your microphone* is on.
+- **"No microphone found":** plug in your microphone or headset. AZVox finds it automatically.
+- **My voice sounds robotic or words get cut:** choose **Balanced** or **Strong** instead of Extreme or Max.
+- **I hear crackling:** choose the **Lite** engine. Your PC may be too busy for Quality.
 
 ---
 
 ## Privacy
 
-All audio processing happens on your PC. AZVox never uploads audio and has no telemetry. It only goes online to check for AZVox updates and, when you ask for them, to download the optional models and the virtual cable.
+All sound processing happens on your PC. AZVox **never uploads your voice** and collects **no data about you**. It goes online only to check for AZVox updates, and when you ask it to download the optional Quality engine, the voice model or the free virtual cable.
 
-## Support
+## Support and custom work
 
 Need help, found a bug, or have an idea? Want a **custom app or automation** for your work or business?
+
 📧 **devartmidnight@gmail.com**
 
 ---
 
-AZVox is free to use but not open source. Copyright © 2026 Art Midnight. All rights reserved. This repository only hosts installers and update information.
+AZVox is free to use but not open source. Copyright © 2026 Art Midnight. All rights reserved. This page hosts only the installers and update information. VB-Audio Virtual Cable is donationware by VB-Audio Software and is not part of AZVox.
