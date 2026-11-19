@@ -34,24 +34,13 @@ You need **Windows 10 or 11**, a microphone or headset, and an internet connecti
 4. If Windows asks *"Do you want to allow this app to make changes?"* during setup, you can click **No**. AZVox works fine without it.
 5. AZVox opens by itself when it's done.
 
-### 2. Hear it for yourself first
+### 2. Set up the virtual microphone (one time)
 
-Go to **Test my mic** in the menu on the left.
-
-![Test my mic](screenshots/test-my-mic-light.png)
-
-1. Click **Record 6-second test** and talk normally, with your usual noise around you (fan on, TV on, whatever is normal for you).
-2. Click **Original** to hear yourself without AZVox.
-3. Click **With AZVox** to hear the difference.
-4. Use **Play the recording on** to choose your headset or speakers.
-
-### 3. Set up the virtual microphone (one time)
-
-Your call app needs a way to receive AZVox's cleaned-up voice. AZVox does this with a free **virtual microphone**: an extra "microphone" in Windows that carries your clean voice instead of the noisy one.
+Your call app needs a way to receive AZVox's cleaned-up voice. AZVox does this with a free **virtual microphone**: an extra "microphone" in Windows that carries your clean voice instead of the noisy one. Do this first: it only takes a minute, and everything else builds on it.
 
 ![Calls & cable](screenshots/calls-and-cable-light.png)
 
-1. In AZVox, click **Calls & cable** in the menu.
+1. In AZVox, click **Calls & cable** in the menu on the left.
 2. Click **Get free virtual cable**. AZVox downloads the free VB-Audio Virtual Cable from VB-Audio's website.
 3. Click **Yes** when Windows asks for permission.
 4. A VB-Audio window opens: click **Install Driver**, then **OK**.
@@ -59,7 +48,29 @@ Your call app needs a way to receive AZVox's cleaned-up voice. AZVox does this w
 
 > If AZVox asks you to restart your PC, do it, then open AZVox and click **Rename to AZVox Clean Mic**.
 
-### 4. Turn AZVox on
+### 3. Choose your microphone
+
+Still in **Calls & cable** (or on **Home → Devices**):
+
+1. **Microphone you talk into**: pick your real microphone or headset (for example *Microphone (USB Headset)*).
+2. **Send cleaned voice to**: make sure it says **AZVox Clean Output**. AZVox picks it for you after step 2; if not, choose it from the list.
+
+![Devices](screenshots/home-light.png)
+
+### 4. Hear it for yourself
+
+Go to **Test my mic** in the menu on the left. It records from the microphone you just chose, through AZVox's noise removal.
+
+![Test my mic](screenshots/test-my-mic-light.png)
+
+1. **Play the recording on**: choose your headset or speakers (headphones make the difference easiest to hear).
+2. Click **Record 6-second test** and talk normally, with your usual noise around you (fan on, TV on, whatever is normal for you).
+3. Click **Original** to hear yourself without AZVox.
+4. Click **With AZVox** to hear the difference.
+
+Not happy with the result? Try a stronger preset (see *Choosing how strong the noise removal is* below) and record again.
+
+### 5. Turn AZVox on
 
 Go to **Home** and click the big round **power button**. When it glows and says **Live**, AZVox is cleaning your voice.
 
@@ -68,7 +79,7 @@ Go to **Home** and click the big round **power button**. When it glows and says 
 - **Your mic** shows what your microphone hears.
 - **Callers hear** shows what the other person will hear. When you stop talking, it should drop to almost nothing: that's the noise being removed.
 
-### 5. Pick AZVox in your call app
+### 6. Pick AZVox in your call app
 
 In your call app's audio settings, choose **AZVox Clean Mic** as the **microphone**. Leave the speaker/headphones setting as it is.
 
