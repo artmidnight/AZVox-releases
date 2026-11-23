@@ -174,6 +174,16 @@ Need help, found a bug, or have an idea? Want a **custom app or automation** for
 
 📧 **devartmidnight@gmail.com**
 
+### Support AZVox
+
+AZVox is free. If it helps you, you can support its development:
+
+☕ **[Buy me a coffee](https://buymeacoffee.com/artmidnight)**
+
+In the app, **Help & support → Support AZVox** also shows QR codes for **Buy Me a Coffee, GCash, GoTyme Bank (InstaPay), PayPal and Binance (USDT, TRON/TRC20 network)**.
+
+![Support AZVox](screenshots/support-card-light.png)
+
 ---
 
 AZVox is free to use but not open source. Copyright © 2026 Art Midnight. All rights reserved. This page hosts only the installers and update information. VB-Audio Virtual Cable is donationware by VB-Audio Software and is not part of AZVox.
